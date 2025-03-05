@@ -28,8 +28,6 @@ The system is divided into two main services:
 1. **User Service**: Manages user authentication, friend requests, and user-related data.
 2. **Notification Service**: Listens to Kafka events and stores notifications in the database.
 
-## Folder Structure
-
 ## Installation
 
 ### Prerequisites
@@ -87,8 +85,12 @@ The API Gateway runs on port `8080` and forwards requests to the appropriate ser
 - `POST /user/friend/unfriend`: Unfriend a user
 - `POST /user/friend/unfollow`: Unfollow a user
 - `POST /user/friend/follow-again`: Follow a user again
-
+  
 ### Notification Service
 
 - `GET /notifications`: Get all notifications for a user
 - `PUT /notifications/:notification_id/read`: Mark a notification as read
+
+## System Diagram
+
+For a high-level abstract overview of the system's architecture, please refer to my [Draw.io Diagram](https://drive.google.com/file/d/1hWC-mMXMwisHSAYXt8KQKeyUON5nM4Td/view?usp=sharing). This diagram serves as a conceptual representation of the microservices design. Detailed diagrams and further explanations will be provided over time.
